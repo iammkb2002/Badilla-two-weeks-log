@@ -13,7 +13,7 @@ df = pd.read_csv('data.csv')
 
 # Introduction
 st.markdown("""
-This dashboard shows some visualizations and analyses of my own daily activities from Oct. 16 to 23, 2021. 
+This dashboard shows some visualizations and analyses of my own daily activities from October 9 to October 23, 2023. 
 The data set contains information about the activity, start time, end time, location, energy level after, and mood after for each activity. 
 The energy and mood columns are based on a scale of 1 to 10, where 1 is the lowest and 10 is the highest.
 The dashboard allows you to explore different aspects of the data, such as sleep patterns, activity frequency, time management, location preference, energy levels, mood levels, and the relationship between energy and mood.
