@@ -139,72 +139,88 @@ def display_plot_and_explanation(option):
 
         # Generate and display the explanation
         explanation = f"The pie chart represents the proportion of time spent at the top 5 locations. The locations are: {', '.join(plot_df['Location'])}. Each slice of the pie represents a different location, and the size of the slice represents the proportion of time spent at that location. The largest slice represents the location '{plot_df.iloc[0]['Location']}' where most time is spent, and the smallest slice represents the location '{plot_df.iloc[-1]['Location']}' where least time is spent among the top 5 locations. This chart helps us understand where most time is spent. I discovered that the location where I spent most of my time was 'Home' with a proportion of 46.9%, followed by 'School', 'Others', 'School cafeteria', and 'Cinema'. I think this shows that I prefer to stay at home more than going out, as it is the largest slice of the pie. I also think that I might not be very social, as I spent very little time at 'Cinema' which is the smallest slice of the pie."
-        st.write(explanation)
+        import plotly.express as px
+        import pandas as pd
+        import statsmodels.api as sm
+        import streamlit as st
 
-    # Create a new column for the hour of the day
-    df['Hour of Day'] = df['Start Time'].dt.hour
+        def display_plot_and_explanation(option):
+            # Load the data
+            df = pd.read_csv('data.csv')
 
-    # Group by 'Hour of Day' and calculate the mean energy level
-    energy_levels = df.groupby('Hour of Day')['Energy Level After'].mean()
+            # Convert 'Start Time' column to datetime format
+            df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    # Create a dataframe for the plot
-    plot_df = pd.DataFrame({
-        'Hour of Day': energy_levels.index,
-        'Average Energy Level': energy_levels.values
-    })
+            # Create a new column for the hour of the day
+            df['Hour of Day'] = df['Start Time'].dt.hour
 
-    if option == 'Average Energy Levels Throughout the Day':
-        # Create the plot
-        fig = px.line(plot_df, x='Hour of Day', y='Average Energy Level', title='Average Energy Levels Throughout the Day')
+            # Group by 'Hour of Day' and calculate the mean energy level
+            energy_levels = df.groupby('Hour of Day')['Energy Level After'].mean()
 
-        # Display the plot in Streamlit
-        st.plotly_chart(fig)
+            # Create a dataframe for the plot
+            plot_df = pd.DataFrame({
+                'Hour of Day': energy_levels.index,
+                'Average Energy Level': energy_levels.values
+            })
 
-        # Generate and display the explanation
-        explanation = f"The line graph represents the average energy levels throughout the day. The x-axis represents the hour of the day, ranging from 0 to 24. The y-axis represents the average energy level, ranging from approximately 5 to 8.5. The line graph shows a fluctuation in energy levels throughout the day. There is a peak in energy levels at around 8 am and midnight, which could be attributed to activities such as having breakfast, or recharging via sleeping. There are low points at around 3 pm and 6 pm, which could be due to factors like post-lunch slump or fatigue from the day's activities. This visualization can help in understanding how energy levels vary throughout the day and can provide insights into optimizing daily routines for better energy management. I observed that my energy levels changed throughout the day, with peaks at around 8 am and midnight, and lows at around 3 pm and 6 pm. I think this means that I have higher energy levels after having breakfast or sleeping, and lower energy levels after having lunch or doing a lot of activities."
-        st.write(explanation)
-        
-    # Group by 'Hour of Day' and calculate the mean mood level
-    mood_levels = df.groupby('Hour of Day')['Mood After'].mean()
+            if option == 'Average Energy Levels Throughout the Day':
+                # Create the plot
+                fig = px.line(plot_df, x='Hour of Day', y='Average Energy Level', title='Average Energy Levels Throughout the Day')
+                fig.update_traces(line=dict(color='green'))
 
-    # Create a dataframe for the plot
-    plot_df = pd.DataFrame({
-        'Hour of Day': mood_levels.index,
-        'Average Mood Level': mood_levels.values
-    })
+                # Display the plot in Streamlit
+                st.plotly_chart(fig)
 
-    if option == 'Average Mood Levels Throughout the Day':
-        # Create the plot
-        fig = px.line(plot_df, x='Hour of Day', y='Average Mood Level', title='Average Mood Levels Throughout the Day')
+                # Generate and display the explanation
+                explanation = f"The line graph represents the average energy levels throughout the day. The x-axis represents the hour of the day, ranging from 0 to 24. The y-axis represents the average energy level, ranging from approximately 5 to 8.5. The line graph shows a fluctuation in energy levels throughout the day. There is a peak in energy levels at around 8 am and midnight, which could be attributed to activities such as having breakfast, or recharging via sleeping. There are low points at around 3 pm and 6 pm, which could be due to factors like post-lunch slump or fatigue from the day's activities. This visualization can help in understanding how energy levels vary throughout the day and can provide insights into optimizing daily routines for better energy management. I observed that my energy levels changed throughout the day, with peaks at around 8 am and midnight, and lows at around 3 pm and 6 pm. I think this means that I have higher energy levels after having breakfast or sleeping, and lower energy levels after having lunch or doing a lot of activities."
+                st.write(explanation)
+                
+            # Group by 'Hour of Day' and calculate the mean mood level
+            mood_levels = df.groupby('Hour of Day')['Mood After'].mean()
 
-        # Display the plot in Streamlit
-        st.plotly_chart(fig)
+            # Create a dataframe for the plot
+            plot_df = pd.DataFrame({
+                'Hour of Day': mood_levels.index,
+                'Average Mood Level': mood_levels.values
+            })
 
-        # Generate and display the explanation
-        explanation = f"The line graph represents the average mood levels throughout the day. The x-axis represents the hour of the day. The y-axis represents the average mood level, ranging from approximately 6 to 8. The line graph shows a fluctuation in mood levels throughout the day. There is a peak in mood levels at around 10 am, which could be attributed to activities such as having breakfast or starting the day's work or classes. There is a low point at around 8 pm, which could be due to factors like fatigue from the day's activities. This visualization can help in understanding how mood levels vary throughout the day and can provide insights into optimizing daily routines for better mood management. I noticed that my mood levels changed throughout the day, with a peak at around 10 am, and a low at around 8 pm. I think this means that I feel happier after having breakfast or starting the day's work or classes, and less happy after doing a lot of activities."
-        st.write(explanation)
+            if option == 'Average Mood Levels Throughout the Day':
+                # Create the plot
+                fig = px.line(plot_df, x='Hour of Day', y='Average Mood Level', title='Average Mood Levels Throughout the Day')
+                fig.update_traces(line=dict(color='green'))
 
-    if option == 'Energy vs Mood':
-        # Fit the regression model
-        X = df['Energy Level After']
-        y = df['Mood After']
-        X = sm.add_constant(X)  # adding a constant
+                # Display the plot in Streamlit
+                st.plotly_chart(fig)
 
-        model = sm.OLS(y, X).fit()
-        predictions = model.predict(X)
+                # Generate and display the explanation
+                explanation = f"The line graph represents the average mood levels throughout the day. The x-axis represents the hour of the day. The y-axis represents the average mood level, ranging from approximately 6 to 8. The line graph shows a fluctuation in mood levels throughout the day. There is a peak in mood levels at around 10 am, which could be attributed to activities such as having breakfast or starting the day's work or classes. There is a low point at around 8 pm, which could be due to factors like fatigue from the day's activities. This visualization can help in understanding how mood levels vary throughout the day and can provide insights into optimizing daily routines for better mood management. I noticed that my mood levels changed throughout the day, with a peak at around 10 am, and a low at around 8 pm. I think this means that I feel happier after having breakfast or starting the day's work or classes, and less happy after doing a lot of activities."
+                st.write(explanation)
 
-        # Create the scatter plot with trendline
-        fig = px.scatter(df, x='Energy Level After', y='Mood After', trendline="ols", title='Energy vs Mood')
-        st.plotly_chart(fig)
+            if option == 'Energy vs Mood':
+                # Fit the regression model
+                X = df['Energy Level After']
+                y = df['Mood After']
+                X = sm.add_constant(X)  # adding a constant
 
-        # Display the regression equation
-        st.write(f"Regression equation: Mood After = {model.params[0]} + {model.params[1]} * (Energy Level After)")
+                model = sm.OLS(y, X).fit()
+                predictions = model.predict(X)
 
-        # Generate and display the explanation
-        explanation = f"The scatter plot shows how my mood changes with my energy level after each activity. The higher my energy level, the higher my mood. The trendline is a line that best fits the data points and shows the general direction of the relationship. The regression equation is a formula that describes the relationship mathematically. It says that my mood is equal to 2.55 plus 0.68 times my energy level. This means that for every one point increase in my energy level, my mood increases by 0.68 points on average, regardless of other factors. The summary statistics give more details about how well the formula fits the data and how confident I am about the results. The R-squared value is 0.606, which means that 60.6% of the variation in mood can be explained by energy level. The p-values are very small, which means that the results are very unlikely to happen by chance."
-        st.write(explanation)
+                # Create the scatter plot with trendline
+                fig = px.scatter(df, x='Energy Level After', y='Mood After', trendline="ols", title='Energy vs Mood')
+                fig.update_traces(marker=dict(color='green'))
+                fig.update_traces(line=dict(color='green'))
 
-        # Display the summary statistics
-        st.write(model.summary())
+                # Display the plot in Streamlit
+                st.plotly_chart(fig)
 
-display_plot_and_explanation(choice)
+                # Display the regression equation
+                st.write(f"Regression equation: Mood After = {model.params[0]} + {model.params[1]} * (Energy Level After)")
+
+                # Generate and display the explanation
+                explanation = f"The scatter plot shows how my mood changes with my energy level after each activity. The higher my energy level, the higher my mood. The trendline is a line that best fits the data points and shows the general direction of the relationship. The regression equation is a formula that describes the relationship mathematically. It says that my mood is equal to 2.55 plus 0.68 times my energy level. This means that for every one point increase in my energy level, my mood increases by 0.68 points on average, regardless of other factors. The summary statistics give more details about how well the formula fits the data and how confident I am about the results. The R-squared value is 0.606, which means that 60.6% of the variation in mood can be explained by energy level. The p-values are very small, which means that the results are very unlikely to happen by chance."
+                st.write(explanation)
+
+                # Display the summary statistics
+                st.write(model.summary())
+
+        display_plot_and_explanation(choice)
