@@ -1,0 +1,213 @@
+Activity,Start Time,End Time,Location,Energy Level After,Mood After,Date
+Sleeping,0:00,6:30,Home,8,7,9-Oct-23
+Bath,6:30,7:00,Home,9,8,9-Oct-23
+Travel to school,7:00,7:30,Others,8,7,9-Oct-23
+Class,7:30,10:00,School,7,6,9-Oct-23
+Breakfast,10:00,11:30,School cafeteria,8,7,9-Oct-23
+Lunch,11:30,13:00,School cafeteria,8,7,9-Oct-23
+Class,13:00,15:00,School,6,5,9-Oct-23
+Class,15:00,16:30,School,5,4,9-Oct-23
+Travel back home ,16:30,17:00,Others,5,5,9-Oct-23
+Dinner ,17:00,18:00,Home,6,6,9-Oct-23
+Do assignments ,18:00,20:30,Home,6,5,9-Oct-23
+Watch Netflix ,20:30,22:00,Home,7,7,9-Oct-23
+Sleeping,22:00,7:00,Home,8,8,10-Oct-23
+Breakfast,7:00,7:30,Home,8,8,10-Oct-23
+Class,7:30,10:00,Home,6,6,10-Oct-23
+Social Media,10:00,10:30,Home,7,9,10-Oct-23
+Class,10:30,12:00,Home,5,7,10-Oct-23
+Lunch,12:00,12:30,Home,8,8,10-Oct-23
+Bath,12:30,12:45,Home,8,8,10-Oct-23
+Travel to school ,12:45,13:00,Others,6,7,10-Oct-23
+Class,13:00,15:00,School,5,6,10-Oct-23
+Prep for next class,15:00,15:30,School,5,6,10-Oct-23
+Class,15:30,18:00,School,5,6,10-Oct-23
+Travel to home ,18:00,18:30,Others,4,5,10-Oct-23
+Unwind,18:30,18:45,Home,5,6,10-Oct-23
+Watch Netflix ,18:45,19:30,Home,5,7,10-Oct-23
+Dinner,19:30,20:00,Home,6,7,10-Oct-23
+Do assignments,20:00,22:00,Home,4,4,10-Oct-23
+Watch Netflix ,22:00,23:30,Home,5,5,10-Oct-23
+Sleeping,23:30,5:00,Home,8,7,11-Oct-23
+Fix mom computer,5:00,8:00,Home,7,7,11-Oct-23
+Breakfast,8:00,8:20,Home,6,7,11-Oct-23
+Social Media,8:20,9:30,Home,5,8,11-Oct-23
+Sleeping,9:30,11:00,Home,9,9,11-Oct-23
+Bath ,11:00,11:10,Home,5,8,11-Oct-23
+Lunch ,11:10,12:00,Home,8,8,11-Oct-23
+Do assignments ,12:00,15:00,Home,6,6,11-Oct-23
+Social media,15:00,16:00,Home,7,8,11-Oct-23
+Watch Netflix ,16:00,18:00,Home,8,9,11-Oct-23
+Dinner,18:00,19:00,Home,7,9,11-Oct-23
+Bath,19:00,19:30,Home,6,8,11-Oct-23
+Do assignments,19:30,21:00,Home,5,6,11-Oct-23
+Sleeping,21:00,6:00,Home,8,9,12-Oct-23
+Studying,6:00,7:00,Home,5,6,12-Oct-23
+Breakfast,7:00,7:30,Home,8,8,12-Oct-23
+Class,7:30,10:00,Home,6,6,12-Oct-23
+Social Media ,10:00,10:30,Home,7,9,12-Oct-23
+Class,10:30,12:00,Home,5,7,12-Oct-23
+Lunch ,12:00,12:30,Home,8,8,12-Oct-23
+Bath ,12:30,12:45,Home,8,8,12-Oct-23
+Travel to school ,12:45,13:00,Others,7,7,12-Oct-23
+Class,13:00,15:00,School,6,7,12-Oct-23
+Prep for next class,15:00,15:30,School,5,6,12-Oct-23
+Class,15:30,18:00,School,5,6,12-Oct-23
+Travel to home,18:00,18:30,Others,4,5,12-Oct-23
+Unwind,18:30,18:45,Home,5,6,12-Oct-23
+Social Media,18:45,19:30,Home,5,7,12-Oct-23
+Dinner,19:30,20:00,Home,6,7,12-Oct-23
+Do assignments,20:00,22:00,Home,4,4,12-Oct-23
+Social Media ,22:00,23:30,Home,5,5,12-Oct-23
+Sleeping,23:30,6:00,Home,8,9,13-Oct-23
+Breakfast,6:00,7:00,Home,5,6,13-Oct-23
+Travel to school ,7:00,7:30,Others,8,8,13-Oct-23
+Class,7:30,10:00,School,6,6,13-Oct-23
+Social Media,10:00,10:30,School,7,9,13-Oct-23
+Do assignments,10:30,12:00,School,5,7,13-Oct-23
+Lunch,12:00,12:30,School,8,8,13-Oct-23
+Social Media ,12:30,13:00,School,8,8,13-Oct-23
+Class,13:00,15:00,School,5,6,13-Oct-23
+Class,15:00,16:30,School,6,7,13-Oct-23
+Travel to home ,16:30,17:30,Others,4,5,13-Oct-23
+Unwind ,17:30,18:00,Home,4,5,13-Oct-23
+Dinner ,18:00,20:00,Home,6,7,13-Oct-23
+Do assignments,20:00,23:30,Home,4,4,13-Oct-23
+Sleeping,23:30,7:00,Home,9,7,14-Oct-23
+Breakfast,7:00,7:30,Home,8,8,14-Oct-23
+Class,7:30,10:00,Home,6,6,14-Oct-23
+Social Media ,10:00,10:30,Home,7,9,14-Oct-23
+Class (IT 317) ,10:30,12:00,Home,5,7,14-Oct-23
+Lunch ,12:00,12:45,Home,8,8,14-Oct-23
+Travel to school ,12:45,13:30,Home,8,8,14-Oct-23
+Class (HUM 031) ,13:30,15:00,School,5,6,14-Oct-23
+Snack break ,15:00,15:30,School cafeteria,6,7,14-Oct-23
+Class,15:30,18:30,School,4,5,14-Oct-23
+Travel to home,18:30,19:00,Others,4,5,14-Oct-23
+Dinner,19:00,19:30,Home,6,7,14-Oct-23
+Do assignments ,19:30,22:30,Home,4,4,14-Oct-23
+Sleeping,22:30,8:00,Home,8,7,15-Oct-23
+Breakfast,8:00,9:30,Home,8,8,15-Oct-23
+Bath,9:30,10:00,Home,8,8,15-Oct-23
+Church,10:00,13:00,Church,7,8,15-Oct-23
+Lunch with family ,13:00,13:30,Restaurant,8,9,15-Oct-23
+Shopping ,13:30,17:30,Mall,6,7,15-Oct-23
+Watch a movie ,17:30,18:30,Cinema,7,8,15-Oct-23
+Travel to home ,18:30,19:00,Others,5,6,15-Oct-23
+Dinner ,19:00,20:00,Home,6,7,15-Oct-23
+Watch Netflix ,20:00,22:00,Home,6,7,15-Oct-23
+Sleeping,22:00,6:30,Home,9,7,16-Oct-23
+Breakfast,6:30,7:00,Home,8,8,16-Oct-23
+Travel to school ,7:00,7:30,Home,8,8,16-Oct-23
+Class,7:30,10:00,School,6,6,16-Oct-23
+Social Media ,10:00,10:30,School library,7,9,16-Oct-23
+Lunch ,10:30,12:45,School,5,7,16-Oct-23
+Do assignment,12:45,13:00,School cafeteria,8,8,16-Oct-23
+Class,13:00,15:00,School,7,8,16-Oct-23
+Class,15:00,16:30,School,5,6,16-Oct-23
+Snack break ,16:30,17:00,School cafeteria,6,7,16-Oct-23
+Travel to home,17:00,17:30,School,4,5,16-Oct-23
+Unwind,17:30,18:00,Others,4,5,16-Oct-23
+Watch Netflix ,18:00,19:30,Home,5,6,16-Oct-23
+Dinner,19:30,19:30,Home,6,7,16-Oct-23
+Do assignments ,19:30,22:30,Home,4,4,16-Oct-23
+Sleeping,22:30,6:00,Home,9,7,17-Oct-23
+Breakfast,6:00,6:30,Home,8,8,17-Oct-23
+Studying,6:30,7:30,Home,5,6,17-Oct-23
+Class,7:30,10:00,Home,6,6,17-Oct-23
+Social Media ,10:00,10:30,Home,7,9,17-Oct-23
+Class (IT 317) ,10:30,12:00,Home,5,7,17-Oct-23
+Lunch ,12:00,12:30,Home,8,8,17-Oct-23
+Travel to school ,12:30,13:00,Others,8,8,17-Oct-23
+Class (HUM 031) ,13:00,15:00,School,5,6,17-Oct-23
+Snack break ,15:00,15:30,School cafeteria,6,7,17-Oct-23
+Class,15:30,18:00,School,4,5,17-Oct-23
+Travel to home,18:00,18:30,Others,4,5,17-Oct-23
+Unwind,18:30,19:00,Home,5,6,17-Oct-23
+Dinner,19:00,19:30,Home,6,7,17-Oct-23
+Do assignments ,19:30,21:00,Home,4,4,17-Oct-23
+Watch Netflix ,21:00,22:30,Home,7,8,17-Oct-23
+Sleeping,22:30,6:00,Home,9,7,18-Oct-23
+Breakfast,6:00,6:30,Home,8,8,18-Oct-23
+Studying,6:30,7:30,Home,5,6,18-Oct-23
+Social Media ,7:30,8:30,Home,7,9,18-Oct-23
+Bath ,8:30,8:45,Home,8,8,18-Oct-23
+Do assignments ,8:45,12:00,Home,5,7,18-Oct-23
+Lunch ,12:00,13:00,Home,8,8,18-Oct-23
+Class (CSIT 321) ,13:00,14:00,Home,5,6,18-Oct-23
+Snack break ,14:00,14:15,Home,6,7,18-Oct-23
+Do assignments ,14:15,16:00,Home,4,5,18-Oct-23
+Unwind,16:00,17:00,Home,5,6,18-Oct-23
+Dinner,17:00,17:30,Home,6,7,18-Oct-23
+Do assignments,17:30,19:00,Home,4,4,18-Oct-23
+Watch Netflix ,19:00,22:30,Home,7,8,18-Oct-23
+Sleeping,22:30,6:00,Home,9,7,19-Oct-23
+Breakfast,6:00,6:30,Home,8,8,19-Oct-23
+Studying,6:30,7:30,Home,5,6,19-Oct-23
+Class,7:30,10:00,Home,6,6,19-Oct-23
+Social Media ,10:00,10:30,Home,7,9,19-Oct-23
+Class (IT 317) ,10:30,12:00,Home,5,7,19-Oct-23
+Lunch ,12:00,12:30,Home,8,8,19-Oct-23
+Travel to school ,12:30,13:00,Others,8,8,19-Oct-23
+Class (HUM 031) ,13:00,15:00,School,5,6,19-Oct-23
+Snack break ,15:00,15:30,School cafeteria,6,7,19-Oct-23
+Class,15:30,18:00,School,4,5,19-Oct-23
+Travel to home,18:00,18:30,Others,4,5,19-Oct-23
+Unwind,18:30,19:00,Home,5,6,19-Oct-23
+Dinner,19:00,19:30,Home,6,7,19-Oct-23
+Do assignments ,19:30,21:00,Home,4,4,19-Oct-23
+Watch Netflix ,21:00,22:30,Home,7,8,19-Oct-23
+Sleeping,22:30,6:00,Home,9,7,20-Oct-23
+Breakfast,6:00,7:00,Home,8,8,20-Oct-23
+Travel to school ,7:00,7:30,Home,8,8,20-Oct-23
+Class,7:30,10:00,School,6,6,20-Oct-23
+Social Media ,10:00,10:30,School library,7,9,20-Oct-23
+Lunch ,10:30,12:45,School,5,7,20-Oct-23
+Do assignment,12:45,13:00,School cafeteria,8,8,20-Oct-23
+Class,13:00,15:00,School,7,8,20-Oct-23
+Class,15:00,16:30,School,5,6,20-Oct-23
+Snack break ,16:30,17:00,School cafeteria,6,7,20-Oct-23
+Travel to home,17:00,17:30,School,4,5,20-Oct-23
+Unwind,17:30,18:00,Others,4,5,20-Oct-23
+Watch Netflix ,18:00,19:30,Home,5,6,20-Oct-23
+Dinner,19:30,19:30,Home,6,7,20-Oct-23
+Do assignments ,19:30,22:30,Home,4,4,20-Oct-23
+Sleeping,22:30,8:00,Home,9,7,21-Oct-23
+Breakfast,8:00,8:30,Home,8,8,21-Oct-23
+Wash clothes ,8:30,10:00,Home,6,6,21-Oct-23
+Class,10:00,12:00,Home,7,9,21-Oct-23
+Do assignments ,12:00,14:00,Home,5,6,21-Oct-23
+Snack break,14:00,14:15,Home,6,7,21-Oct-23
+Do assignments ,14:15,16:00,Home,4,5,21-Oct-23
+Watch Netflix ,16:00,17:30,Home,4,5,21-Oct-23
+Dinner,17:30,19:00,Home,6,7,21-Oct-23
+Do assignments,19:00,20:30,Home,4,4,21-Oct-23
+Watch Netflix ,20:30,22:30,Home,7,8,21-Oct-23
+Sleeping,22:30,8:00,Home,9,7,22-Oct-23
+Breakfast,8:00,8:30,Home,8,8,22-Oct-23
+Social Media ,8:30,9:30,Home,7,9,22-Oct-23
+Bath ,9:30,9:45,Home,8,8,22-Oct-23
+Do assignments,9:45,12:00,Home,5,7,22-Oct-23
+Lunch ,12:00,12:30,Home,8,8,22-Oct-23
+Karaoke with friends ,12:30,16:00,Cinema,7,8,22-Oct-23
+Snack break with friends ,16:00,16:30,Cafe,6,7,22-Oct-23
+Travel to home,16:30,17:00,Others,4,5,22-Oct-23
+Unwind,17:00,17:30,Home,5,6,22-Oct-23
+Dinner,17:30,18:00,Home,6,7,22-Oct-23
+Do assignments ,18:00,19:30,Home,4,4,22-Oct-23
+Watch Netflix ,19:30,21:00,Home,7,8,22-Oct-23
+Sleeping,21:00,6:00,Home,9,7,23-Oct-23
+Breakfast,6:00,6:30,Home,8,8,23-Oct-23
+Travel to school,6:30,7:30,Others,5,6,23-Oct-23
+Class,7:30,10:00,School,6,6,23-Oct-23
+Hangout with friends,10:00,12:00,School,7,9,23-Oct-23
+Lunch ,12:00,13:00,School,8,8,23-Oct-23
+Class,13:00,15:00,School,5,7,23-Oct-23
+Class,15:00,16:30,School,5,6,23-Oct-23
+Snack break ,16:30,17:30,School cafeteria,6,7,23-Oct-23
+Travel to home,17:30,18:00,Others,4,5,23-Oct-23
+Unwind,18:00,19:00,Home,5,6,23-Oct-23
+Dinner,19:00,19:30,Home,6,7,23-Oct-23
+Do assignments,19:30,21:00,Home,4,4,23-Oct-23
+Watch Netflix ,21:00,22:30,Home,7,8,23-Oct-23
+Sleeping,22:30,5:00,Home,8,7,24-Oct-23
